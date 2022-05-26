@@ -99,22 +99,3 @@ body {
   justify-content: center;
 }
 
-.mobile {
-    display: block;
-  }
-
-.mobile ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-.mobile ul li {
-    list-style: none;
-  }
-
-.mobile ul li a {
-    text-decoration: none;
-    font-size: var(--md);
-    color: var(--light-black);
-    font-weight: 600;
-  }
