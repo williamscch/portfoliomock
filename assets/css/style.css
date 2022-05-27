@@ -101,13 +101,13 @@ body {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 327px);
+  grid-template-columns: repeat(auto-fill, 320px);
   gap: 26px;
   place-content: center;
 }
 
 .product-card {
-  width: 327px;
+  width: 320px;
 }
 
 .product-card img {
@@ -116,7 +116,7 @@ body {
 }
 
 .product-card {
-  width: 370px;
+  width: 320px;
   border: solid 1px var(--very-light-black);
   border-radius: 10px;
 }
