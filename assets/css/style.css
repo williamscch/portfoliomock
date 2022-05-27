@@ -5,6 +5,7 @@
   --light-black: #172b4d;
   --green: #36b37e;
   --very-light-black: #505f79;
+  --gray: #ebf0ee;
   --sm: 14px;
   --md: 20px;
   --lg: 45px;
@@ -162,24 +163,34 @@ body {
   background-color: var(--gray);
 }
 
-.cards h1{
+.cards h1 {
   font-size: var(--lg);
   font-weight: 700;
   color: var(--light-black);
   text-align: center;
-  margin: 0 20px 0 20px
+  margin: 0 20px 0 20px;
 }
 
-.about-me{
+.dash {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 60px;
+}
+
+.about-me {
+  background-image: url(/assets/img/header-illsutration-mobile@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 300px;
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 
-.about-me h1{
+.about-me h1 {
   font-size: var(--lg);
   font-weight: 700;
   color: var(--light-black);
@@ -187,14 +198,14 @@ body {
   margin: 0;
 }
 
-.about-me p{
+.about-me p {
   font-size: var(--md);
   text-align: center;
   margin: 0 25px 0 25px;
   font-weight: 400;
 }
 
-.about-me button{
+.about-me button {
   background-color: var(--green);
   color: var(--white);
   border-color: var(--green);
@@ -203,4 +214,63 @@ body {
   height: 50px;
   font-weight: 500;
   font-size: 17px;
+}
+
+.my-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  gap: 26px;
+  place-content: center;
+  width: 100%;
+}
+
+.skills-card {
+  background-color: var(--gray);
+  width: 320px;
+  height: 350px;
+  border: solid 2px var(--very-light-black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-card img {
+  width: 120px;
+  height: 120px;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-info p {
+  margin: 0 0 25px 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skill ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.skill ul li {
+  color: var(--green);
+  font-size: var(--sm);
+  font-weight: 600;
+  list-style: none;
+  border: solid 4px var(--white);
+  border-radius: 7px;
+  margin: 5px;
+  background-color: var(--white);
 }
