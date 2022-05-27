@@ -161,3 +161,46 @@ body {
   margin: 5px;
   background-color: var(--gray);
 }
+
+.cards h1{
+  font-size: var(--lg);
+  font-weight: 700;
+  color: var(--light-black);
+  text-align: center;
+  margin: 0 20px 0 20px
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  margin-top: 40px;
+}
+
+.about-me h1{
+  font-size: var(--lg);
+  font-weight: 700;
+  color: var(--light-black);
+  text-align: center;
+  margin: 0;
+}
+
+.about-me p{
+  font-size: var(--md);
+  text-align: center;
+  margin: 0 25px 0 25px;
+  font-weight: 400;
+}
+
+.about-me button{
+  background-color: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 17px;
+}
