@@ -5,6 +5,10 @@
   --light-black: #172b4d;
   --green: #36b37e;
   --very-light-black: #505f79;
+  --black-titles: #3a4a42;
+  --neutral: #42526e;
+  --paragraf: #172b4d;
+  --gray: #ebf0ee;
   --sm: 14px;
   --md: 20px;
   --lg: 45px;
@@ -86,6 +90,8 @@ body {
   text-align: center;
   margin: 0 25px 0 25px;
   font-weight: 400;
+  color: var(--paragraf);
+  line-height: 28px;
 }
 
 .button {
@@ -97,4 +103,234 @@ body {
 .scroll-down {
   display: flex;
   justify-content: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  gap: 26px;
+  place-content: center;
+}
+
+.product-card {
+  width: 320px;
+  border: solid 1px var(--very-light-black);
+  border-radius: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.product-info h2 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black-titles);
+}
+
+.product-info button {
+  background-color: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+  border-radius: 5px;
+  width: 122px;
+  height: 50px;
+  font-weight: 500;
+  font-size: var(--md);
+}
+
+.leng ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.leng ul li {
+  color: var(--black-titles);
+  list-style: none;
+  border: solid 4px var(--gray);
+  border-radius: 7px;
+  margin: 5px;
+  background-color: var(--gray);
+}
+
+.cards h1 {
+  font-size: var(--lg);
+  font-weight: 700;
+  color: var(--light-black);
+  text-align: center;
+  margin: 0 20px 0 20px;
+}
+
+.dash {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 60px;
+}
+
+.about-me {
+  background-image: url(/assets/img/header-illsutration-mobile@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 390px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.about-me h1 {
+  font-size: var(--lg);
+  font-weight: 700;
+  color: var(--light-black);
+  text-align: center;
+  font-style: normal;
+  margin: 0;
+}
+
+.about-me p {
+  font-size: var(--md);
+  text-align: center;
+  margin: 0 25px 0 25px;
+  font-weight: 400;
+  color: var(--neutral);
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.about-me button {
+  background-color: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.my-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  gap: 26px;
+  place-content: center;
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.skills-card {
+  background-color: var(--gray);
+  width: 320px;
+  height: 350px;
+  border: solid 2px var(--very-light-black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-card img {
+  width: 120px;
+  height: 120px;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-info h3 {
+  margin: 0 0 25px 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skill ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.skill ul li {
+  color: var(--green);
+  font-size: var(--sm);
+  font-weight: 600;
+  list-style: none;
+  border: solid 4px var(--white);
+  border-radius: 7px;
+  margin: 5px;
+  background-color: var(--white);
+}
+
+.product-info button:hover {
+  background-color: #36b37f;
+  color: var(--white);
+  border-color: #36b37f;
+  border-radius: 5px;
+  width: 122px;
+  height: 50px;
+  font-weight: 500;
+  font-size: var(--md);
+  box-shadow: 0 8px 16px;
+}
+
+.product-info button:active {
+  background-color: #008552;
+  color: var(--white);
+  border-color: #008552;
+  border-radius: 5px;
+  width: 122px;
+  height: 50px;
+  font-weight: 500;
+  font-size: var(--md);
+}
+
+.about-me button:hover {
+  background-color: #36b37f;
+  color: var(--white);
+  border-color: #36b37f;
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.about-me button:active {
+  background-color: #008552;
+  color: var(--white);
+  border-color: #008552;
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 17px;
+  box-shadow: 0 8px 16px;
 }
