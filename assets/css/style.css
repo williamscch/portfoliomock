@@ -5,6 +5,9 @@
   --light-black: #172b4d;
   --green: #36b37e;
   --very-light-black: #505f79;
+  --black-titles: #3a4a42;
+  --neutral: #42526e;
+  --paragraf: #172b4d;
   --gray: #ebf0ee;
   --sm: 14px;
   --md: 20px;
@@ -87,6 +90,8 @@ body {
   text-align: center;
   margin: 0 25px 0 25px;
   font-weight: 400;
+  color: var(--paragraf);
+  line-height: 28px;
 }
 
 .button {
@@ -129,11 +134,12 @@ body {
   height: 200px;
 }
 
-.product-info p {
+.product-info h2 {
   margin: 0;
   font-size: 25px;
   font-weight: 600;
   text-align: center;
+  color: var(--black-titles);
 }
 
 .product-info button {
@@ -156,6 +162,7 @@ body {
 }
 
 .leng ul li {
+  color: var(--black-titles);
   list-style: none;
   border: solid 4px var(--gray);
   border-radius: 7px;
@@ -185,7 +192,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 300px;
+  height: 390px;
   margin-top: 40px;
   margin-bottom: 60px;
 }
@@ -195,6 +202,7 @@ body {
   font-weight: 700;
   color: var(--light-black);
   text-align: center;
+  font-style: normal;
   margin: 0;
 }
 
@@ -203,6 +211,10 @@ body {
   text-align: center;
   margin: 0 25px 0 25px;
   font-weight: 400;
+  color: var(--neutral);
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .about-me button {
@@ -222,6 +234,8 @@ body {
   gap: 26px;
   place-content: center;
   width: 100%;
+  margin-bottom: 60px;
+  padding: 0;
 }
 
 .skills-card {
@@ -248,7 +262,7 @@ body {
   align-items: center;
 }
 
-.skills-info p {
+.skills-info h3 {
   margin: 0 0 25px 0;
   font-size: 25px;
   font-weight: 600;
@@ -273,4 +287,50 @@ body {
   border-radius: 7px;
   margin: 5px;
   background-color: var(--white);
+}
+
+.product-info button:hover {
+  background-color: #36b37f;
+  color: var(--white);
+  border-color: #36b37f;
+  border-radius: 5px;
+  width: 122px;
+  height: 50px;
+  font-weight: 500;
+  font-size: var(--md);
+  box-shadow: 0 8px 16px;
+}
+
+.product-info button:active {
+  background-color: #008552;
+  color: var(--white);
+  border-color: #008552;
+  border-radius: 5px;
+  width: 122px;
+  height: 50px;
+  font-weight: 500;
+  font-size: var(--md);
+}
+
+.about-me button:hover {
+  background-color: #36b37f;
+  color: var(--white);
+  border-color: #36b37f;
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.about-me button:active {
+  background-color: #008552;
+  color: var(--white);
+  border-color: #008552;
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 17px;
+  box-shadow: 0 8px 16px;
 }
