@@ -309,7 +309,7 @@ footer form textarea {
 }
 
 footer form textarea::placeholder {
-  color: #091E42;
+  color: #091e42;
   font-family: "Inter", sans-serif;
 }
 
@@ -342,6 +342,6 @@ footer h5 {
 
 footer hr {
   width: 200px;
-  border: 3px solid #091E42;
+  border: 3px solid #091e42;
   border-radius: 3px;
 }
