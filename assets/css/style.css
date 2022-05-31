@@ -9,6 +9,7 @@
   --neutral: #42526e;
   --paragraf: #172b4d;
   --gray: #ebf0ee;
+  --light-gray: #D0D9D4;
   --sm: 14px;
   --md: 20px;
   --lg: 45px;
@@ -141,7 +142,7 @@ body {
   text-align: center;
   color: var(--black-titles);
 }
-
+/* 
 .product-info button {
   background-color: var(--green);
   color: var(--white);
@@ -151,7 +152,7 @@ body {
   height: 50px;
   font-weight: 500;
   font-size: var(--md);
-}
+} */
 
 .leng ul {
   display: flex;
@@ -217,15 +218,23 @@ body {
   margin-bottom: 24px;
 }
 
-.about-me button {
+button {
   background-color: var(--green);
   color: var(--white);
   border-color: var(--green);
   border-radius: 5px;
-  width: 160px;
-  height: 50px;
   font-weight: 500;
   font-size: 17px;
+  padding: 12px;
+  border: none;
+}
+
+button:hover{
+  box-shadow: 0px 8px 16px 0px #36B37F3D;
+}
+
+button:active{
+  background-color:#008552;
 }
 
 .my-skills {
@@ -289,7 +298,7 @@ body {
   background-color: var(--white);
 }
 
-.product-info button:hover {
+/* .product-info button:hover {
   background-color: #36b37f;
   color: var(--white);
   border-color: #36b37f;
@@ -310,9 +319,9 @@ body {
   height: 50px;
   font-weight: 500;
   font-size: var(--md);
-}
+} */
 
-.about-me button:hover {
+/* .about-me button:hover {
   background-color: #36b37f;
   color: var(--white);
   border-color: #36b37f;
@@ -333,4 +342,34 @@ body {
   font-weight: 500;
   font-size: 17px;
   box-shadow: 0 8px 16px;
+} */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  text-align: center;
+}
+
+footer form{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer form input{
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid var(--light-gray);
+}
+
+footer form textarea{
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid var(--green);
+}
+
+footer form textarea::placeholder{
+  color: var(--black);
+  font-family: "Inter", sans-serif;
 }
