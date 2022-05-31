@@ -9,7 +9,7 @@
   --neutral: #42526e;
   --paragraf: #172b4d;
   --gray: #ebf0ee;
-  --light-gray: #D0D9D4;
+  --light-gray: #d0d9d4;
   --sm: 14px;
   --md: 20px;
   --lg: 45px;
@@ -142,17 +142,6 @@ body {
   text-align: center;
   color: var(--black-titles);
 }
-/* 
-.product-info button {
-  background-color: var(--green);
-  color: var(--white);
-  border-color: var(--green);
-  border-radius: 5px;
-  width: 122px;
-  height: 50px;
-  font-weight: 500;
-  font-size: var(--md);
-} */
 
 .leng ul {
   display: flex;
@@ -229,14 +218,6 @@ button {
   border: none;
 }
 
-button:hover{
-  box-shadow: 0px 8px 16px 0px #36B37F3D;
-}
-
-button:active{
-  background-color:#008552;
-}
-
 .my-skills {
   display: grid;
   grid-template-columns: repeat(auto-fill, 320px);
@@ -298,78 +279,66 @@ button:active{
   background-color: var(--white);
 }
 
-/* .product-info button:hover {
-  background-color: #36b37f;
-  color: var(--white);
-  border-color: #36b37f;
-  border-radius: 5px;
-  width: 122px;
-  height: 50px;
-  font-weight: 500;
-  font-size: var(--md);
-  box-shadow: 0 8px 16px;
-}
-
-.product-info button:active {
-  background-color: #008552;
-  color: var(--white);
-  border-color: #008552;
-  border-radius: 5px;
-  width: 122px;
-  height: 50px;
-  font-weight: 500;
-  font-size: var(--md);
-} */
-
-/* .about-me button:hover {
-  background-color: #36b37f;
-  color: var(--white);
-  border-color: #36b37f;
-  border-radius: 5px;
-  width: 160px;
-  height: 50px;
-  font-weight: 500;
-  font-size: 17px;
-}
-
-.about-me button:active {
-  background-color: #008552;
-  color: var(--white);
-  border-color: #008552;
-  border-radius: 5px;
-  width: 160px;
-  height: 50px;
-  font-weight: 500;
-  font-size: 17px;
-  box-shadow: 0 8px 16px;
-} */
-
-footer{
+footer {
   display: flex;
   flex-direction: column;
   padding: 0 24px;
   text-align: center;
 }
 
-footer form{
+footer form {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 44px;
 }
 
-footer form input{
+footer form input {
   height: 48px;
   border-radius: 4px;
   border: 1px solid var(--light-gray);
 }
 
-footer form textarea{
+footer form textarea {
   height: 90px;
   border-radius: 4px;
   border: 1px solid var(--green);
 }
 
-footer form textarea::placeholder{
+footer form textarea::placeholder {
   color: var(--black);
   font-family: "Inter", sans-serif;
+}
+
+footer form button {
+  width: 129px;
+  align-self: center;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 #36b37f3d;
+}
+
+button:active {
+  background-color: #008552;
+}
+
+footer h4 {
+  font-size: var(--lg);
+  font-weight: 700;
+  margin-bottom: 58px;
+}
+
+footer h5 {
+  font-size: var(--md);
+  font-weight: 400;
+  color: var(--neutral);
+  margin-top: 0;
+  margin-bottom: 336px;
+}
+
+footer hr {
+  width: 200px;
+  border: 3px solid var(--black);
+  border-radius: 3px;
 }
