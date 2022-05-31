@@ -284,6 +284,9 @@ footer {
   flex-direction: column;
   padding: 0 24px;
   text-align: center;
+  background-image: url(/assets/img/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 65%;
 }
 
 footer form {
@@ -306,7 +309,7 @@ footer form textarea {
 }
 
 footer form textarea::placeholder {
-  color: var(--black);
+  color: #091E42;
   font-family: "Inter", sans-serif;
 }
 
@@ -339,6 +342,6 @@ footer h5 {
 
 footer hr {
   width: 200px;
-  border: 3px solid var(--black);
+  border: 3px solid #091E42;
   border-radius: 3px;
 }
