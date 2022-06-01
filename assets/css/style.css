@@ -373,6 +373,10 @@ footer h5 {
   .desktop {
     display: none;
   }
+
+  .network hr {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
