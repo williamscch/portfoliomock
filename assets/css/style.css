@@ -38,6 +38,25 @@ body {
   font-weight: 600;
 }
 
+.desktop {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 0;
+  padding-top: 16px;
+}
+
+.desktop li {
+  list-style: none;
+}
+
+.desktop li a {
+  text-decoration: none;
+  font-size: var(--md);
+  color: var(--light-black);
+  font-weight: 600;
+}
+
 .head-line {
   background: url(../img/header-illsutration-mobile@2x.png);
   background-size: 100%;
@@ -182,7 +201,8 @@ body {
 }
 
 .about-me {
-  background-image: url(/assets/img//illustration-about-me-2-desktop.png),
+  background-image:
+    url(/assets/img//illustration-about-me-2-desktop.png),
     url(/assets/img/illustration-about\ me-1-desktop.png);
   background-position: 0% 100%, right top;
   background-repeat: no-repeat, no-repeat;
@@ -349,23 +369,6 @@ footer h5 {
   margin-bottom: 336px;
 }
 
-.desktop {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 0;
-  padding-top: 16px;
-}
-.desktop li {
-  list-style: none;
-}
-.desktop li a {
-  text-decoration: none;
-  font-size: var(--md);
-  color: var(--light-black);
-  font-weight: 600;
-}
-
 @media (max-width: 768px) {
   .desktop {
     display: none;
@@ -376,6 +379,7 @@ footer h5 {
   body {
     margin: 0;
   }
+
   .mobile {
     display: none;
   }
@@ -386,34 +390,43 @@ footer h5 {
     background-size: 100%;
     background-repeat: no-repeat;
   }
+
   .head-line {
     background-image: none;
   }
+
   .title h1 {
     font-size: var(--xl);
   }
+
   .title2 {
     font-size: var(--xl);
   }
+
   .subtitle {
     max-width: 800px;
     text-align: center;
   }
+
   .network ul {
     gap: 23px;
   }
+
   .dash {
     display: none;
   }
+
   .cards-container {
     max-width: 1700px;
     grid-template-columns: repeat(auto-fill, 350px);
     gap: 7%;
     margin: auto;
   }
+
   .product-card {
     width: 380px;
   }
+
   .about-me {
     display: flex;
     flex-direction: column;
@@ -421,23 +434,29 @@ footer h5 {
     background-size: 15%, 15%;
     margin-top: 10%;
   }
+
   .about-me h1 {
     font-size: var(--xl);
   }
+
   .about-me p {
     margin: 0 30%;
   }
+
   .cards h1 {
     margin-top: 5%;
     margin-bottom: 5%;
   }
+
   .main-card {
     padding: 100px;
   }
+
   .my-skills {
     grid-template-columns: repeat(auto-fill, 380px);
     gap: 7%;
   }
+
   .skills-card {
     width: 380px;
   }
@@ -445,6 +464,12 @@ footer h5 {
   footer {
     flex-direction: column;
     padding: 0;
+    background-image:
+      url(/assets/img/illustration-1-contact-form-desktop.png),
+      url(/assets/img/illustration-2-contact-form-desktop.png),
+      url(/assets/img/illustration-contact-form.svg);
+    background-position: 0 85%, 30% 80%, 100% -60%;
+    background-size: 12%, 7%, 12%;
   }
 
   .form-title {
@@ -454,6 +479,7 @@ footer h5 {
     gap: 24px;
     margin-bottom: 10%;
   }
+
   .form-title h4 {
     font-size: 30px;
     width: 30%;
@@ -465,23 +491,20 @@ footer h5 {
     width: 684px;
     height: 48px;
   }
+
   .form-title form textarea {
     width: 684px;
     height: 114px;
   }
+
   .form-title form button {
     align-self: flex-start;
   }
+
   .network {
     margin: 0;
   }
-  footer {
-    background-image: url(/assets/img/illustration-1-contact-form-desktop.png),
-      url(/assets/img/illustration-2-contact-form-desktop.png),
-      url(/assets/img/illustration-contact-form.svg);
-    background-position: 0 85%, 30% 80%, 100% -60%;
-    background-size: 12%, 7%, 12%;
-  }
+
   footer h5 {
     display: none;
   }
