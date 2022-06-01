@@ -349,12 +349,6 @@ footer h5 {
   margin-bottom: 336px;
 }
 
-footer hr {
-  width: 200px;
-  border: 3px solid #091e42;
-  border-radius: 3px;
-}
-
 .desktop {
   display: flex;
   justify-content: center;
@@ -387,7 +381,7 @@ footer hr {
   }
 
   header {
-    height: 1400px;
+    height: 1300px;
     background-image: url(/assets/img/Header-llustration-desktop@2x.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -402,28 +396,28 @@ footer hr {
     font-size: var(--xl);
   }
   .subtitle {
-    /* margin-left: 27%;
-    margin-right: 27%; */
     max-width: 800px;
     text-align: center;
   }
   .network ul {
     gap: 23px;
   }
-  .dash{
+  .dash {
     display: none;
   }
   .cards-container {
     max-width: 1700px;
-    grid-template-columns: repeat(auto-fill, 380px);
+    grid-template-columns: repeat(auto-fill, 350px);
     gap: 7%;
     margin: auto;
-
   }
   .product-card {
     width: 380px;
   }
-  .about-me{
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-size: 15%, 15%;
     margin-top: 10%;
   }
@@ -433,20 +427,62 @@ footer hr {
   .about-me p {
     margin: 0 30%;
   }
-  .cards h1{
-    margin-bottom: 10%;
+  .cards h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
-  .my-skills{
+  .main-card {
+    padding: 100px;
+  }
+  .my-skills {
     grid-template-columns: repeat(auto-fill, 380px);
     gap: 7%;
   }
-  .skills-card{
+  .skills-card {
     width: 380px;
   }
-  footer{
-    flex-direction: row;
+
+  footer {
+    flex-direction: column;
+    padding: 0;
   }
-  footer h5, hr{
+
+  .form-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 10%;
+  }
+  .form-title h4 {
+    font-size: 30px;
+    width: 30%;
+    align-self: center;
+    line-height: 52px;
+  }
+
+  .form-title form input {
+    width: 684px;
+    height: 48px;
+  }
+  .form-title form textarea {
+    width: 684px;
+    height: 114px;
+  }
+  .form-title form button {
+    align-self: flex-start;
+  }
+  .network {
+    margin: 0;
+  }
+  footer {
+    background-image: url(/assets/img/illustration-1-contact-form-desktop.png),
+      url(/assets/img/illustration-2-contact-form-desktop.png),
+      url(/assets/img/illustration-contact-form.svg);
+    background-position: 0 85%, 30% 80%, 100% -60%;
+    background-size: 12%, 7%, 12%;
+  }
+  footer h5 {
     display: none;
   }
 }
