@@ -44,10 +44,16 @@ body {
   gap: 40px;
   margin-top: 0;
   padding-top: 16px;
+  padding-left: 0;
 }
+  
+  .desktop ul{
+padding: 0;
+  }
 
 .desktop li {
   list-style: none;
+  padding: 0;
 }
 
 .desktop li a {
