@@ -12,7 +12,8 @@
   --light-gray: #d0d9d4;
   --sm: 14px;
   --md: 20px;
-  --lg: 45px;
+  --lg: 40px;
+  --xl: 48px;
 }
 
 body {
@@ -22,18 +23,15 @@ body {
 
 .mobile {
   margin-right: 30px;
-}
-
-.mobile ul {
   display: flex;
   justify-content: space-between;
 }
 
-.mobile ul li {
+.mobile li {
   list-style: none;
 }
 
-.mobile ul li a {
+.mobile li a {
   text-decoration: none;
   font-size: var(--md);
   color: var(--light-black);
@@ -48,6 +46,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 24px;
+  align-items: center;
 }
 
 .network {
@@ -56,7 +56,8 @@ body {
 
 .network ul {
   display: flex;
-  justify-content: space-around;
+  gap: 19px;
+  justify-content: center;
   padding: 0;
 }
 
@@ -105,6 +106,12 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* .cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 
 .cards-container {
   display: grid;
@@ -175,9 +182,11 @@ body {
 }
 
 .about-me {
-  background-image: url(/assets/img/header-illsutration-mobile@2x.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-image: url(/assets/img//illustration-about-me-2-desktop.png),
+    url(/assets/img/illustration-about\ me-1-desktop.png);
+  background-position: 0% 100%, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 23%, 23%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -344,4 +353,100 @@ footer hr {
   width: 200px;
   border: 3px solid #091e42;
   border-radius: 3px;
+}
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 0;
+  padding-top: 16px;
+}
+.desktop li {
+  list-style: none;
+}
+.desktop li a {
+  text-decoration: none;
+  font-size: var(--md);
+  color: var(--light-black);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .mobile {
+    display: none;
+  }
+
+  header {
+    height: 1400px;
+    background-image: url(/assets/img/Header-llustration-desktop@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .head-line {
+    background-image: none;
+  }
+  .title h1 {
+    font-size: var(--xl);
+  }
+  .title2 {
+    font-size: var(--xl);
+  }
+  .subtitle {
+    /* margin-left: 27%;
+    margin-right: 27%; */
+    max-width: 800px;
+    text-align: center;
+  }
+  .network ul {
+    gap: 23px;
+  }
+  .dash{
+    display: none;
+  }
+  .cards-container {
+    max-width: 1700px;
+    grid-template-columns: repeat(auto-fill, 380px);
+    gap: 7%;
+    margin: auto;
+
+  }
+  .product-card {
+    width: 380px;
+  }
+  .about-me{
+    background-size: 15%, 15%;
+    margin-top: 10%;
+  }
+  .about-me h1 {
+    font-size: var(--xl);
+  }
+  .about-me p {
+    margin: 0 30%;
+  }
+  .cards h1{
+    margin-bottom: 10%;
+  }
+  .my-skills{
+    grid-template-columns: repeat(auto-fill, 380px);
+    gap: 7%;
+  }
+  .skills-card{
+    width: 380px;
+  }
+  footer{
+    flex-direction: row;
+  }
+  footer h5, hr{
+    display: none;
+  }
 }
