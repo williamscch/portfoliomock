@@ -263,7 +263,7 @@ button {
   background-color: var(--gray);
   width: 320px;
   height: 350px;
-  border: solid 2px var(--very-light-black);
+  border: solid 2px #C1C7D0;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -460,7 +460,9 @@ footer h5 {
 
   .my-skills {
     grid-template-columns: repeat(auto-fill, 380px);
-    gap: 7%;
+    gap: 24px;
+    width: 80%;
+    margin: auto;
   }
 
   .skills-card {
