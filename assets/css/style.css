@@ -102,6 +102,24 @@ body {
   text-align: center;
 }
 
+.title{
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes appear{
+  from{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1.3);
+  }
+  to{
+    /* transform: scale(1); */
+  }
+}
+
 .subtitle {
   font-size: var(--md);
   text-align: center;
