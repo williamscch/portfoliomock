@@ -455,16 +455,17 @@ footer h5 {
   .my-skills {
     grid-template-columns: repeat(auto-fill, 380px);
     gap: 24px;
-    width: 80%;
+    width: 70%;
+    margin: auto;
+  }
+
+  .skill{
+    width:80%;
     margin: auto;
   }
 
   .skills-card {
     width: 380px;
-  }
-
-  .skill {
-    padding: 49px;
   }
 
   footer {
