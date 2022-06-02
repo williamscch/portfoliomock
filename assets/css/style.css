@@ -133,6 +133,11 @@ body {
   width: 320px;
   border: solid 1px var(--very-light-black);
   border-radius: 10px;
+  transition: transform 2s;
+}
+
+.product-card:hover{
+  transform: scale(1.2);
 }
 
 .product-card img {
@@ -235,6 +240,8 @@ button {
   font-size: 17px;
   padding: 12px;
   border: none;
+  transition-property: width, height;
+  transition-duration: 2s, 2s;
 }
 
 .my-skills {
@@ -341,6 +348,8 @@ footer form button {
 
 button:hover {
   box-shadow: 0 8px 16px 0 #36b37f3d;
+  width: 100px;
+  height:100px;
 }
 
 button:active {
