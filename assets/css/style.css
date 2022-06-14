@@ -21,8 +21,13 @@ body {
   margin: 0;
 }
 
+body.active {
+  background-color: var(--light-gray);
+  overflow: hidden;
+}
+
 .mobile {
-  margin-right: 30px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -36,6 +41,7 @@ body {
   font-size: var(--md);
   color: var(--light-black);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .desktop {
@@ -45,6 +51,7 @@ body {
   margin-top: 0;
   padding-top: 16px;
   padding-left: 0;
+  padding-right: 2%;
 }
 
 .desktop li {
@@ -127,12 +134,12 @@ body {
   line-height: 28px;
 }
 
-.scroll-down {
+.scroll {
   display: flex;
   justify-content: center;
 }
 
-.scroll-down a {
+.scroll-down {
   font-size: 40px;
   color: var(--very-light-black);
 }
@@ -148,6 +155,7 @@ body {
   width: 320px;
   border: solid 1px var(--very-light-black);
   border-radius: 10px;
+  background-color: var(--white);
 }
 
 .product-card img {
@@ -206,7 +214,8 @@ body {
 }
 
 .about-me {
-  background-image: url(../img//illustration-about-me-2-desktop.png),
+  background-image:
+    url(../img//illustration-about-me-2-desktop.png),
     url(../img/illustration-about\ me-1-desktop.png);
   background-position: 0% 100%, right top;
   background-repeat: no-repeat, no-repeat;
@@ -401,7 +410,42 @@ footer h5 {
 
 @media (max-width: 768px) {
   .desktop {
-    display: none;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100%;
+    height: 80vh;
+    gap: 40px;
+    justify-content: start;
+    padding: 108px 0 0 28px;
+    left: 100%;
+    top: 0;
+    border-bottom-left-radius: 40px;
+    transition: 0.5s;
+  }
+
+  .desktop li a {
+    font-size: var(--lg);
+  }
+
+  .desktop li a:active {
+    color: var(--green);
+  }
+
+  .desktop.active {
+    left: 0;
+  }
+
+  .x {
+    position: absolute;
+    top: 1%;
+    right: 15%;
+    cursor: pointer;
+  }
+
+  .x i {
+    font-size: var(--md);
   }
 
   .network hr {
@@ -410,6 +454,10 @@ footer h5 {
 }
 
 @media (min-width: 768px) {
+  .x {
+    display: none;
+  }
+
   body {
     margin: 0;
     background-image: url(../img/Header-llustration-desktop@2x.png);
@@ -420,10 +468,6 @@ footer h5 {
 
   .mobile {
     display: none;
-  }
-
-  header {
-    /* margin-bottom: 350px; */
   }
 
   .head-line {
@@ -506,7 +550,8 @@ footer h5 {
   footer {
     flex-direction: column;
     padding: 0;
-    background-image: url(../img/illustration-1-contact-form-desktop.png),
+    background-image:
+      url(../img/illustration-1-contact-form-desktop.png),
       url(../img/illustration-2-contact-form-desktop.png),
       url(../img/illustration-contact-form.svg);
     background-position: 0 85%, 30% 80%, 100% -60%;
