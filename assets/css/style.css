@@ -23,6 +23,7 @@ body {
 
 body.active {
   background-color: var(--light-gray);
+  overflow: hidden;
 }
 
 .mobile {
@@ -40,6 +41,7 @@ body.active {
   font-size: var(--md);
   color: var(--light-black);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .desktop {
@@ -439,6 +441,7 @@ footer h5 {
     position: absolute;
     top: 1%;
     right: 15%;
+    cursor: pointer;
   }
 
   .x i {
