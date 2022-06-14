@@ -21,7 +21,7 @@ body {
   margin: 0;
 }
 
-body.active{
+body.active {
   background-color: var(--light-gray);
 }
 
@@ -49,6 +49,7 @@ body.active{
   margin-top: 0;
   padding-top: 16px;
   padding-left: 0;
+  padding-right: 2%;
 }
 
 .desktop li {
@@ -131,12 +132,12 @@ body.active{
   line-height: 28px;
 }
 
-.scroll-down {
+.scroll {
   display: flex;
   justify-content: center;
 }
 
-.scroll-down a {
+.scroll-down {
   font-size: 40px;
   color: var(--very-light-black);
 }
@@ -211,7 +212,8 @@ body.active{
 }
 
 .about-me {
-  background-image: url(../img//illustration-about-me-2-desktop.png),
+  background-image:
+    url(../img//illustration-about-me-2-desktop.png),
     url(../img/illustration-about\ me-1-desktop.png);
   background-position: 0% 100%, right top;
   background-repeat: no-repeat, no-repeat;
@@ -439,7 +441,7 @@ footer h5 {
     right: 15%;
   }
 
-  .x i{
+  .x i {
     font-size: var(--md);
   }
 
@@ -449,6 +451,10 @@ footer h5 {
 }
 
 @media (min-width: 768px) {
+  .x {
+    display: none;
+  }
+
   body {
     margin: 0;
     background-image: url(../img/Header-llustration-desktop@2x.png);
@@ -541,7 +547,8 @@ footer h5 {
   footer {
     flex-direction: column;
     padding: 0;
-    background-image: url(../img/illustration-1-contact-form-desktop.png),
+    background-image:
+      url(../img/illustration-1-contact-form-desktop.png),
       url(../img/illustration-2-contact-form-desktop.png),
       url(../img/illustration-contact-form.svg);
     background-position: 0 85%, 30% 80%, 100% -60%;
