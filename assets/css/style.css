@@ -21,15 +21,14 @@ body {
   margin: 0;
 }
 
+body.active{
+  background-color: var(--light-gray);
+}
+
 .mobile {
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
-}
-
-.mobile.active {
-  position: fixed;
-  color: var(--white);
 }
 
 .mobile li {
@@ -153,6 +152,7 @@ body {
   width: 320px;
   border: solid 1px var(--very-light-black);
   border-radius: 10px;
+  background-color: var(--white);
 }
 
 .product-card img {
@@ -412,21 +412,35 @@ footer h5 {
     background-color: var(--white);
     width: 100%;
     height: 80vh;
-    padding-top: 0;
-    margin-top: 0;
     gap: 40px;
     justify-content: start;
     padding: 108px 0 0 28px;
-    right: -110%;
-    transition: 40s;
+    left: 100%;
+    top: 0;
+    border-bottom-left-radius: 40px;
+    transition: 0.5s;
   }
- 
-  .desktop li a{
+
+  .desktop li a {
     font-size: var(--lg);
   }
 
-  .desktop.active{
+  .desktop li a:active {
+    color: var(--green);
+  }
+
+  .desktop.active {
     left: 0;
+  }
+
+  .x {
+    position: absolute;
+    top: 1%;
+    right: 15%;
+  }
+
+  .x i{
+    font-size: var(--md);
   }
 
   .network hr {
