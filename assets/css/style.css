@@ -709,3 +709,65 @@ footer h5 {
   height: 18px;
   margin-left: 10px;
 }
+
+/* MEDIA QUERIES FOR POPUP DESKTOP */
+
+@media (min-width: 768px) {
+  .wrapper {
+    background-color: rgb(193, 199, 208, 0.95);
+  }
+  .cardPopUp {
+    background-color: var(--white);
+    position: fixed;
+    height: 80%;
+    width: 45%;
+    padding: 50px 30px 20px 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .closex {
+    display: none;
+  }
+  .cardimg {
+    width: 100%;
+    height: 65%;
+    border-radius: 8px;
+    margin-bottom: 1%;
+  }
+  .cardPopUp h3 {
+    padding-right: 30%;
+    margin-bottom: 1%;
+  }
+  .closepop {
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 3.5%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s;
+  }
+  .closepop:hover {
+    transform: scale(0.8);
+  }
+  .projectul {
+    gap: 40px;
+  }
+  .projectul li {
+    gap: 10px;
+  }
+  .cardPopUp p {
+    line-height: 30px;
+    font-size: var(--smm);
+  }
+  .cardButtonDiv {
+    position: absolute;
+    right: 3.5%;
+    top: 68.5%;
+    gap: 20px;
+  }
+}
