@@ -215,3 +215,111 @@ cardsContainer.innerHTML = `<article class="product-card">
 // }
 
 // generalProjects();
+
+// function pop up window
+
+function openProjectCard(projectNum) {
+  const wrapper = document.createElement('section');
+  wrapper.classList.add('wrapper');
+  const cardPopUp = document.createElement('div');
+  document.body.appendChild(wrapper);
+  wrapper.appendChild(cardPopUp);
+  cardPopUp.classList.add('cardPopUp');
+
+  const cardImg = document.createElement('img');
+  const cardTitle = document.createElement('h3');
+  const cardDiv = document.createElement('div');
+  const cardInfo = document.createElement('p');
+  const projectUl = document.createElement('ul');
+  const cardButtonsDiv = document.createElement('div');
+  const liveButton = document.createElement('a');
+  const sourceButton = document.createElement('a');
+  const buttonimg1 = document.createElement('img');
+  const buttonimg2 = document.createElement('img');
+  const closeX = document.createElement('img');
+  const closePop = document.createElement('img');
+
+  buttonimg1.classList.add('enable');
+  buttonimg2.classList.add('git');
+  closeX.classList.add('closex');
+  cardImg.classList.add('cardimg');
+  closePop.classList.add('closepop');
+
+  cardPopUp.append(
+    closeX,
+    closePop,
+    cardImg,
+    cardTitle,
+    cardDiv,
+    projectUl,
+    cardInfo,
+    cardButtonsDiv,
+    liveButton,
+    sourceButton,
+  );
+  cardButtonsDiv.append(liveButton, sourceButton);
+
+  closeX.src = './assets/img/Iconx.svg';
+  closePop.src = './assets/img/xicon.svg';
+  cardImg.src = projects[projectNum].image;
+  cardTitle.textContent = projects[projectNum].title;
+  cardInfo.textContent = projects[projectNum].description;
+  cardButtonsDiv.classList.add('cardButtonDiv');
+  liveButton.href = projects[projectNum].buttonLive;
+  liveButton.target = '_blank';
+  liveButton.textContent = 'See Live';
+  liveButton.classList.add('pop-button');
+  liveButton.appendChild(buttonimg1);
+  buttonimg1.src = './assets/img/enable.svg';
+  sourceButton.href = projects[projectNum].buttonSource;
+  sourceButton.target = '_blank';
+  sourceButton.textContent = 'See Source';
+  sourceButton.classList.add('pop-button');
+  sourceButton.appendChild(buttonimg2);
+  buttonimg2.src = './assets/img/git.svg';
+
+  projects[projectNum].languages.forEach((element, index) => {
+    projectUl.classList.add('projectul');
+    const projectLi = document.createElement('li');
+    projectUl.append(projectLi);
+    projectLi.textContent = projects[projectNum].languages[index];
+  });
+
+  closeX.addEventListener('click', () => {
+    body.removeChild(wrapper);
+  });
+
+  closePop.addEventListener('click', () => {
+    body.removeChild(wrapper);
+  });
+}
+
+const projectButton = document.querySelector('.project-button');
+projectButton.addEventListener('click', () => {
+  openProjectCard(0);
+});
+
+const projectButton2 = document.querySelector('.project-button2');
+projectButton2.addEventListener('click', () => {
+  openProjectCard(1);
+});
+
+const projectButton3 = document.querySelector('.project-button3');
+projectButton3.addEventListener('click', () => {
+  openProjectCard(2);
+});
+
+const projectButton4 = document.querySelector('.project-button4');
+projectButton4.addEventListener('click', () => {
+  openProjectCard(3);
+});
+
+const projectButton5 = document.querySelector('.project-button5');
+projectButton5.addEventListener('click', () => {
+  openProjectCard(4);
+});
+
+const projectButton6 = document.querySelector('.project-button6');
+projectButton6.addEventListener('click', () => {
+  openProjectCard(5);
+});
