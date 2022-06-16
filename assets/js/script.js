@@ -41,7 +41,7 @@ const projects = [
     title: 'Keeping track of hundreds of components',
     languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'Html'],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the real Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     buttonLive: 'https://wdavidcch.github.io/portfolio/',
     buttonSource: 'https://github.com/wdavidcch/portfolio',
   },
@@ -178,7 +178,7 @@ cardsContainer.innerHTML = `<article class="product-card">
 <article class="product-card">
 <img src="./assets/img/laptop-project.jpg" alt="img" />
 <div class="product-info">
-    <h2>Profesional Art Printing Data More</h2>
+    <h2>Professional Art Printing Data More</h2>
     <div>
         <ul class="leng">
             <li>Ruby on Rails</li>
@@ -228,7 +228,7 @@ function openProjectCard(projectNum) {
 
   const cardImg = document.createElement('img');
   const cardTitle = document.createElement('h3');
-  const cardDiv = document.createElement('div');
+  // const cardDiv = document.createElement('div');
   const cardInfo = document.createElement('p');
   const projectUl = document.createElement('ul');
   const cardButtonsDiv = document.createElement('div');
@@ -239,6 +239,7 @@ function openProjectCard(projectNum) {
   const closeX = document.createElement('img');
   const closePop = document.createElement('img');
 
+  // cardDiv.classList.add('info-buttons');
   buttonimg1.classList.add('enable');
   buttonimg2.classList.add('git');
   closeX.classList.add('closex');
@@ -250,13 +251,11 @@ function openProjectCard(projectNum) {
     closePop,
     cardImg,
     cardTitle,
-    cardDiv,
     projectUl,
     cardInfo,
     cardButtonsDiv,
-    liveButton,
-    sourceButton,
   );
+  // cardDiv.append(cardInfo, cardButtonsDiv);
   cardButtonsDiv.append(liveButton, sourceButton);
 
   closeX.src = './assets/img/Iconx.svg';

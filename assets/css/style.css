@@ -618,9 +618,9 @@ footer h5 {
   width: 90%;
   padding: 16px;
   border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 30% 20% 5% 40% 5%;
 }
 
 .closepop {
@@ -637,8 +637,9 @@ footer h5 {
 
 .cardimg {
   width: 100%;
-  height: 30%;
+  height: 100%;
   border-radius: 8px;
+  margin-bottom: 5%;
 }
 
 .cardPopUp h3 {
@@ -646,7 +647,9 @@ footer h5 {
   font-size: var(--lg);
   font-weight: 600;
   line-height: 44px;
-  margin: 0;
+  margin-bottom: 5%;
+  margin-top: 0;
+  align-self: center;
 }
 
 .cardPopUp p {
@@ -725,16 +728,19 @@ footer h5 {
   }
 
   .cardPopUp {
-    background-color: var(--white);
-    position: fixed;
     height: 80%;
     width: 45%;
-    padding: 50px 30px 20px 30px;
+    padding: 15px 30px 20px 30px;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 5% 55% 15% 4% 22%;
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c d"
+    "e e e"
+    "f f f";
+    grid-row-gap: 1%;
   }
 
   .closex {
@@ -743,21 +749,21 @@ footer h5 {
 
   .cardimg {
     width: 100%;
-    height: 65%;
+    height: 100%;
     border-radius: 8px;
     margin-bottom: 1%;
+    grid-area: b;
   }
 
   .cardPopUp h3 {
-    padding-right: 30%;
-    margin-bottom: 1%;
+    grid-area: c;
+    margin: 0;
   }
 
   .closepop {
+    grid-area: a;
+    justify-self: end;
     display: block;
-    position: absolute;
-    top: 1%;
-    right: 3.5%;
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -770,6 +776,7 @@ footer h5 {
 
   .projectul {
     gap: 40px;
+    grid-area: e;
   }
 
   .projectul li {
@@ -779,12 +786,13 @@ footer h5 {
   .cardPopUp p {
     line-height: 30px;
     font-size: var(--smm);
+    grid-area: f;
   }
 
   .cardButtonDiv {
-    position: absolute;
-    right: 3.5%;
-    top: 68.5%;
-    gap: 20px;
+    gap: 10px;
+    grid-area: d;
+    padding: 30px 0 30px 0;
+    align-self: center;
   }
 }
