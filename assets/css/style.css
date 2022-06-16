@@ -735,11 +735,11 @@ footer h5 {
     grid-template-columns: 30% 30% 40%;
     grid-template-rows: 5% 55% 15% 4% 22%;
     grid-template-areas:
-    "a a a"
-    "b b b"
-    "c c d"
-    "e e e"
-    "f f f";
+      "a a a"
+      "b b b"
+      "c c d"
+      "e e e"
+      "f f f";
     grid-row-gap: 1%;
   }
 
