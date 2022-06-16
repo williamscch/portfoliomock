@@ -8,16 +8,18 @@
   --black-titles: #3a4a42;
   --neutral: #42526e;
   --paragraf: #172b4d;
+  --popup-title: #344563;
   --gray: #ebf0ee;
   --light-gray: #d0d9d4;
   --sm: 14px;
+  --smm: 16px;
   --md: 20px;
   --lg: 40px;
   --xl: 48px;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
 }
 
@@ -80,17 +82,15 @@ body.active {
 
 .network {
   margin: 0 100px 0 100px;
-}
-
-.network ul {
   display: flex;
   gap: 19px;
   justify-content: center;
   padding: 0;
 }
 
-.network ul li {
+.network li {
   list-style: none;
+  transition: transform 0.5s;
 }
 
 .title h1 {
@@ -180,9 +180,10 @@ body.active {
   font-weight: 600;
   text-align: center;
   color: var(--black-titles);
+  padding: 0 5px;
 }
 
-.leng ul {
+.leng {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -190,7 +191,7 @@ body.active {
   margin: 0;
 }
 
-.leng ul li {
+.leng li {
   color: var(--black-titles);
   list-style: none;
   border: solid 4px var(--gray);
@@ -306,7 +307,7 @@ button {
   text-align: center;
 }
 
-.skill ul {
+.skill {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -315,7 +316,7 @@ button {
   margin: 0;
 }
 
-.skill ul li {
+.skill li {
   color: var(--green);
   font-size: var(--sm);
   font-weight: 600;
@@ -369,7 +370,7 @@ footer form textarea:hover {
 
 footer form textarea::placeholder {
   color: #091e42;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 footer form button {
@@ -415,7 +416,7 @@ footer h5 {
     flex-direction: column;
     background-color: var(--white);
     width: 100%;
-    height: 80vh;
+    height: 80%;
     gap: 40px;
     justify-content: start;
     padding: 108px 0 0 28px;
@@ -593,5 +594,205 @@ footer h5 {
 
   footer h5 {
     display: none;
+  }
+}
+
+/* PopUpWindow */
+.wrapper {
+  position: fixed;
+  background-color: #c1c7d0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardPopUp {
+  background-color: var(--white);
+  top: 0;
+  margin: 20px 16px 26px 16px;
+  height: 90%;
+  width: 90%;
+  padding: 16px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 30% 20% 5% 40% 5%;
+}
+
+.closepop {
+  display: none;
+}
+
+.closex {
+  position: absolute;
+  top: 7.2%;
+  right: 14%;
+  cursor: pointer;
+  filter: drop-shadow(0 0 3px var(--black));
+}
+
+.cardimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+.cardPopUp h3 {
+  color: var(--paragraf);
+  font-size: var(--lg);
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 5%;
+  margin-top: 0;
+  align-self: center;
+}
+
+.cardPopUp p {
+  color: var(--popup-title);
+  font-size: var(--sm);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.projectul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  gap: 3px;
+}
+
+.projectul li {
+  color: var(--black-titles);
+  list-style: none;
+  border: solid 4px var(--gray);
+  border-radius: 7px;
+  background-color: var(--gray);
+}
+
+.cardButtonDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pop-button {
+  background-color: var(--green);
+  border-radius: 5px;
+  padding: 12px;
+  border: none;
+  display: flex;
+  transition: background-color 1.5s, color 1.5s, border 1.5s;
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.pop-button:hover {
+  box-shadow: 0 8px 16px 0 #36b37f3d;
+  background-color: var(--light-green);
+  color: var(--light-black);
+  border: 1px solid var(--light-black);
+}
+
+.pop-button:active {
+  background-color: #008552;
+  color: var(--white);
+  border: 1px solid #008552;
+}
+
+.git,
+.enable {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+/* icons hover */
+
+.network li:hover {
+  transform: scale(1.5);
+}
+
+/* MEDIA QUERIES FOR POPUP DESKTOP */
+
+@media (min-width: 768px) {
+  .wrapper {
+    background-color: rgb(193, 199, 208, 0.95);
+  }
+
+  .cardPopUp {
+    height: 80%;
+    width: 45%;
+    padding: 15px 30px 20px 30px;
+    border-radius: 8px;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 5% 55% 15% 4% 22%;
+    grid-template-areas:
+      "a a a"
+      "b b b"
+      "c c d"
+      "e e e"
+      "f f f";
+    grid-row-gap: 1%;
+  }
+
+  .closex {
+    display: none;
+  }
+
+  .cardimg {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 1%;
+    grid-area: b;
+  }
+
+  .cardPopUp h3 {
+    grid-area: c;
+    margin: 0;
+  }
+
+  .closepop {
+    grid-area: a;
+    justify-self: end;
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s;
+  }
+
+  .closepop:hover {
+    transform: scale(0.8);
+  }
+
+  .projectul {
+    gap: 40px;
+    grid-area: e;
+  }
+
+  .projectul li {
+    gap: 10px;
+  }
+
+  .cardPopUp p {
+    line-height: 30px;
+    font-size: var(--smm);
+    grid-area: f;
+  }
+
+  .cardButtonDiv {
+    gap: 10px;
+    grid-area: d;
+    padding: 30px 0 30px 0;
+    align-self: center;
   }
 }
