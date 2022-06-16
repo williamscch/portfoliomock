@@ -82,22 +82,15 @@ body.active {
 
 .network {
   margin: 0 100px 0 100px;
-}
-
-.network ul {
   display: flex;
   gap: 19px;
   justify-content: center;
   padding: 0;
 }
 
-.network ul li {
+.network li {
   list-style: none;
   transition: transform 0.5s;
-}
-
-.network ul li:hover {
-  transform: scale(1.5);
 }
 
 .title h1 {
@@ -190,7 +183,7 @@ body.active {
   padding: 0 5px;
 }
 
-.leng ul {
+.leng {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -198,7 +191,7 @@ body.active {
   margin: 0;
 }
 
-.leng ul li {
+.leng li {
   color: var(--black-titles);
   list-style: none;
   border: solid 4px var(--gray);
@@ -222,7 +215,8 @@ body.active {
 }
 
 .about-me {
-  background-image: url(../img//illustration-about-me-2-desktop.png),
+  background-image:
+    url(../img//illustration-about-me-2-desktop.png),
     url(../img/illustration-about\ me-1-desktop.png);
   background-position: 0% 100%, right top;
   background-repeat: no-repeat, no-repeat;
@@ -313,7 +307,7 @@ button {
   text-align: center;
 }
 
-.skill ul {
+.skill {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -322,7 +316,7 @@ button {
   margin: 0;
 }
 
-.skill ul li {
+.skill li {
   color: var(--green);
   font-size: var(--sm);
   font-weight: 600;
@@ -557,7 +551,8 @@ footer h5 {
   footer {
     flex-direction: column;
     padding: 0;
-    background-image: url(../img/illustration-1-contact-form-desktop.png),
+    background-image:
+      url(../img/illustration-1-contact-form-desktop.png),
       url(../img/illustration-2-contact-form-desktop.png),
       url(../img/illustration-contact-form.svg);
     background-position: 0 85%, 30% 80%, 100% -60%;
@@ -637,7 +632,7 @@ footer h5 {
   top: 7.2%;
   right: 14%;
   cursor: pointer;
-  filter: drop-shadow(0px 0px 3px var(--black));
+  filter: drop-shadow(0 0 3px var(--black));
 }
 
 .cardimg {
@@ -669,6 +664,7 @@ footer h5 {
   margin: 0;
   gap: 3px;
 }
+
 .projectul li {
   color: var(--black-titles);
   list-style: none;
@@ -676,10 +672,12 @@ footer h5 {
   border-radius: 7px;
   background-color: var(--gray);
 }
+
 .cardButtonDiv {
   display: flex;
   justify-content: space-around;
 }
+
 .pop-button {
   background-color: var(--green);
   border-radius: 5px;
@@ -692,22 +690,31 @@ footer h5 {
   text-decoration: none;
   color: var(--white);
 }
+
 .pop-button:hover {
   box-shadow: 0 8px 16px 0 #36b37f3d;
   background-color: var(--light-green);
   color: var(--light-black);
   border: 1px solid var(--light-black);
 }
+
 .pop-button:active {
   background-color: #008552;
   color: var(--white);
   border: 1px solid #008552;
 }
+
 .git,
 .enable {
   width: 18px;
   height: 18px;
   margin-left: 10px;
+}
+
+/* icons hover */
+
+.network li:hover {
+  transform: scale(1.5);
 }
 
 /* MEDIA QUERIES FOR POPUP DESKTOP */
@@ -716,6 +723,7 @@ footer h5 {
   .wrapper {
     background-color: rgb(193, 199, 208, 0.95);
   }
+
   .cardPopUp {
     background-color: var(--white);
     position: fixed;
@@ -728,19 +736,23 @@ footer h5 {
     justify-content: space-between;
     overflow: hidden;
   }
+
   .closex {
     display: none;
   }
+
   .cardimg {
     width: 100%;
     height: 65%;
     border-radius: 8px;
     margin-bottom: 1%;
   }
+
   .cardPopUp h3 {
     padding-right: 30%;
     margin-bottom: 1%;
   }
+
   .closepop {
     display: block;
     position: absolute;
@@ -751,19 +763,24 @@ footer h5 {
     height: 40px;
     transition: transform 0.5s;
   }
+
   .closepop:hover {
     transform: scale(0.8);
   }
+
   .projectul {
     gap: 40px;
   }
+
   .projectul li {
     gap: 10px;
   }
+
   .cardPopUp p {
     line-height: 30px;
     font-size: var(--smm);
   }
+
   .cardButtonDiv {
     position: absolute;
     right: 3.5%;

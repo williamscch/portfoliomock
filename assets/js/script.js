@@ -99,8 +99,8 @@ cardsContainer.innerHTML = `<article class="product-card">
 <img src="./assets/img/projects.jpg" alt="img" />
 <div class="product-info">
     <h2>Keeping track of hundreds of components</h2>
-    <div class="leng">
-        <ul>
+    <div>
+        <ul class="leng">
             <li>Ruby on Rails</li>
             <li>Css</li>
             <li>JavaScript</li>
@@ -115,8 +115,8 @@ cardsContainer.innerHTML = `<article class="product-card">
 <img src="./assets/img/medicalproject.jpg" alt="img" />
 <div class="product-info">
     <h2>Medical Illustration Sets</h2>
-    <div class="leng">
-        <ul>
+    <div>
+        <ul class="leng">
             <li>Ruby on Rails</li>
             <li>Css</li>
             <li>JavaScript</li>
@@ -131,8 +131,8 @@ cardsContainer.innerHTML = `<article class="product-card">
 <img src="./assets/img/girlproject.jpg" alt="img" />
 <div class="product-info">
     <h2>Multi Posts Stories</h2>
-    <div class="leng">
-        <ul>
+    <div>
+        <ul class="leng">
             <li>Ruby on Rails</li>
             <li>Css</li>
             <li>JavaScript</li>
@@ -147,8 +147,8 @@ cardsContainer.innerHTML = `<article class="product-card">
 <img src="./assets/img/face-project.jpg" alt="img" />
 <div class="product-info">
     <h2>Facebook 360</h2>
-    <div class="leng">
-        <ul>
+    <div>
+        <ul class="leng">
             <li>Ruby on Rails</li>
             <li>Css</li>
             <li>JavaScript</li>
@@ -163,8 +163,8 @@ cardsContainer.innerHTML = `<article class="product-card">
 <img src="./assets/img/uber-project.jpg" alt="img" />
 <div class="product-info">
     <h2>Uber Navigation</h2>
-    <div class="leng">
-        <ul>
+    <div>
+        <ul class="leng">
             <li>Ruby on Rails</li>
             <li>Css</li>
             <li>JavaScript</li>
@@ -179,8 +179,8 @@ cardsContainer.innerHTML = `<article class="product-card">
 <img src="./assets/img/laptop-project.jpg" alt="img" />
 <div class="product-info">
     <h2>Profesional Art Printing Data More</h2>
-    <div class="leng">
-        <ul>
+    <div>
+        <ul class="leng">
             <li>Ruby on Rails</li>
             <li>Css</li>
             <li>JavaScript</li>
