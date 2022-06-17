@@ -325,8 +325,10 @@ projectButton6.addEventListener('click', () => {
 
 // Email Validation
 
-const email = document.getElementById('email');
 const form = document.getElementById('form');
+const nameUser = document.getElementById('name');
+const email = document.getElementById('email');
+const text = document.getElementById('text-area');
 const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
@@ -342,3 +344,60 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+// preserve data in the browser
+const dataForm = {
+  name: '',
+  email: '',
+  text: '',
+};
+
+function setData() {
+  const dataEntry = JSON.parse(localStorage.getItem('dataForm'));
+  nameUser.value = dataEntry.name;
+  email.value = dataEntry.email;
+  text.value = dataEntry.text;
+}
+
+function saveData() {
+  dataForm.name = nameUser.value;
+  dataForm.email = email.value;
+  dataForm.text = text.value;
+
+  const toStringData = JSON.stringify(dataForm);
+  localStorage.setItem('dataForm', toStringData);
+
+  setData();
+}
+
+// let formInfo = {
+//   name: document.getElementById('name'),
+//   email: document.getElementById('email'),
+//   text: document.getElementById('text'),
+// };
+
+// formInfo.name.addEventListener('keypress', () => {
+//   localStorage.setItem('name', formInfo.name.value);
+// });
+
+// function show() {
+//   const showup = JSON.parse(localStorage.getItem('name'));
+//   formInfo.name.textContent = showup;
+// }
+
+// window.addEventListener('load', show, false);
+// form.addEventListener('click', () => {
+//   localStorage.setItem('num', JSON.stringify(formInfo);
+// });
+
+// function newData (){
+//   let name = document.getElementById('name').value;
+//   localStorage.setItem('name', 'juan')
+//   showup('name')
+// }
+
+// function showup('name'){
+//   var datos = localStorage.getItem('name');
+//   let ema = document.getElementById('email');
+//   datos.textContent = datos;
+// }
