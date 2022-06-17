@@ -391,7 +391,23 @@ button:active {
   border: 1px solid #008552;
 }
 
-.network ul li a img {
+.network-footer {
+  display: flex;
+  gap: 19px;
+  justify-content: center;
+  padding: 0;
+}
+
+.network-footer li {
+  list-style: none;
+  transition: transform 0.5s;
+}
+
+.network-footer li a img {
+  height: 20px;
+}
+
+.network li a img {
   height: 20px;
 }
 
@@ -449,7 +465,7 @@ footer h5 {
     font-size: var(--md);
   }
 
-  .network hr {
+  hr {
     display: none;
   }
 }
@@ -720,6 +736,10 @@ footer h5 {
   transform: scale(1.5);
 }
 
+.network-footer li:hover {
+  transform: scale(1.5);
+}
+
 /* MEDIA QUERIES FOR POPUP DESKTOP */
 
 @media (min-width: 768px) {
@@ -735,11 +755,11 @@ footer h5 {
     grid-template-columns: 30% 30% 40%;
     grid-template-rows: 5% 55% 15% 4% 22%;
     grid-template-areas:
-      "a a a"
-      "b b b"
-      "c c d"
-      "e e e"
-      "f f f";
+      'a a a'
+      'b b b'
+      'c c d'
+      'e e e'
+      'f f f';
     grid-row-gap: 1%;
   }
 
@@ -795,4 +815,22 @@ footer h5 {
     padding: 30px 0 30px 0;
     align-self: center;
   }
+}
+
+/* Validation form styles */
+.button-errormessage {
+  display: flex;
+  justify-content: space-between;
+}
+
+small {
+  color: #f00;
+  align-self: center;
+  font-weight: 600;
+  font-size: var(--sm);
+  transition: transform 1s;
+}
+
+small:hover {
+  transform: scale(1.5);
 }
