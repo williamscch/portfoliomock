@@ -253,7 +253,7 @@ function openProjectCard(projectNum) {
     cardTitle,
     projectUl,
     cardInfo,
-    cardButtonsDiv
+    cardButtonsDiv,
   );
   // cardDiv.append(cardInfo, cardButtonsDiv);
   cardButtonsDiv.append(liveButton, sourceButton);
