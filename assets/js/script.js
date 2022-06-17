@@ -325,8 +325,10 @@ projectButton6.addEventListener('click', () => {
 
 // Email Validation
 
-const email = document.getElementById('email');
 const form = document.getElementById('form');
+const nameUser = document.getElementById('name');
+const email = document.getElementById('email');
+const text = document.getElementById('text-area');
 const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
@@ -342,3 +344,37 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+// preserve data in the browser
+const dataForm = {
+  name: '',
+  email: '',
+  text: '',
+};
+
+function setData() {
+  const dataEntry = JSON.parse(localStorage.getItem('dataForm'));
+  nameUser.value = dataEntry.name;
+  email.value = dataEntry.email;
+  text.value = dataEntry.text;
+}
+
+function saveData() {
+  dataForm.name = nameUser.value;
+  dataForm.email = email.value;
+  dataForm.text = text.value;
+
+  const toStringData = JSON.stringify(dataForm);
+  localStorage.setItem('dataForm', toStringData);
+
+  setData();
+}
+
+if (!localStorage.getItem('dataForm')) {
+  saveData();
+} else {
+  setData();
+}
+nameUser.onchange = saveData;
+email.onchange = saveData;
+text.onchange = saveData;
