@@ -796,3 +796,25 @@ footer h5 {
     align-self: center;
   }
 }
+
+/* Validation form styles */
+.button-errormessage {
+display: flex;
+justify-content: space-between;
+}
+
+small{
+  background-color: #ff0000;
+  border-radius: 3px;
+  align-self: center;
+  padding: 5px;
+  font-weight: 600;
+  font-size: var(--sm);
+  color: var(--white);
+  transition: transform 1s;
+}
+
+small:hover{
+  transform: scale(1.5);
+}
+
