@@ -215,8 +215,7 @@ body.active {
 }
 
 .about-me {
-  background-image:
-    url(../img//illustration-about-me-2-desktop.png),
+  background-image: url(../img//illustration-about-me-2-desktop.png),
     url(../img/illustration-about\ me-1-desktop.png);
   background-position: 0% 100%, right top;
   background-repeat: no-repeat, no-repeat;
@@ -551,8 +550,7 @@ footer h5 {
   footer {
     flex-direction: column;
     padding: 0;
-    background-image:
-      url(../img/illustration-1-contact-form-desktop.png),
+    background-image: url(../img/illustration-1-contact-form-desktop.png),
       url(../img/illustration-2-contact-form-desktop.png),
       url(../img/illustration-contact-form.svg);
     background-position: 0 85%, 30% 80%, 100% -60%;
@@ -735,11 +733,11 @@ footer h5 {
     grid-template-columns: 30% 30% 40%;
     grid-template-rows: 5% 55% 15% 4% 22%;
     grid-template-areas:
-      "a a a"
-      "b b b"
-      "c c d"
-      "e e e"
-      "f f f";
+      'a a a'
+      'b b b'
+      'c c d'
+      'e e e'
+      'f f f';
     grid-row-gap: 1%;
   }
 
@@ -799,22 +797,18 @@ footer h5 {
 
 /* Validation form styles */
 .button-errormessage {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-small{
-  background-color: #ff0000;
-  border-radius: 3px;
+small {
+  color: #ff0000;
   align-self: center;
-  padding: 5px;
   font-weight: 600;
   font-size: var(--sm);
-  color: var(--white);
   transition: transform 1s;
 }
 
-small:hover{
+small:hover {
   transform: scale(1.5);
 }
-

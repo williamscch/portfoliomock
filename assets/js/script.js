@@ -253,7 +253,7 @@ function openProjectCard(projectNum) {
     cardTitle,
     projectUl,
     cardInfo,
-    cardButtonsDiv,
+    cardButtonsDiv
   );
   // cardDiv.append(cardInfo, cardButtonsDiv);
   cardButtonsDiv.append(liveButton, sourceButton);
@@ -333,6 +333,11 @@ form.addEventListener('submit', (e) => {
   const messages = [];
   if (/[A-Z]/.test(email.value) === true) {
     messages.push('Email must be in lowercase!');
+    errorMessage.innerText = messages.join(', ');
+    e.preventDefault();
+  }
+  if (email.value === '' || email.value === null) {
+    messages.push('Email field can not be empty!');
     errorMessage.innerText = messages.join(', ');
     e.preventDefault();
   }
