@@ -253,7 +253,7 @@ function openProjectCard(projectNum) {
     cardTitle,
     projectUl,
     cardInfo,
-    cardButtonsDiv,
+    cardButtonsDiv
   );
   // cardDiv.append(cardInfo, cardButtonsDiv);
   cardButtonsDiv.append(liveButton, sourceButton);
@@ -370,34 +370,11 @@ function saveData() {
   setData();
 }
 
-// let formInfo = {
-//   name: document.getElementById('name'),
-//   email: document.getElementById('email'),
-//   text: document.getElementById('text'),
-// };
-
-// formInfo.name.addEventListener('keypress', () => {
-//   localStorage.setItem('name', formInfo.name.value);
-// });
-
-// function show() {
-//   const showup = JSON.parse(localStorage.getItem('name'));
-//   formInfo.name.textContent = showup;
-// }
-
-// window.addEventListener('load', show, false);
-// form.addEventListener('click', () => {
-//   localStorage.setItem('num', JSON.stringify(formInfo);
-// });
-
-// function newData (){
-//   let name = document.getElementById('name').value;
-//   localStorage.setItem('name', 'juan')
-//   showup('name')
-// }
-
-// function showup('name'){
-//   var datos = localStorage.getItem('name');
-//   let ema = document.getElementById('email');
-//   datos.textContent = datos;
-// }
+if (!localStorage.getItem('dataForm')) {
+  saveData();
+} else {
+  setData();
+}
+nameUser.onchange = saveData;
+email.onchange = saveData;
+text.onchange = saveData;
