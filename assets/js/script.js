@@ -37,13 +37,13 @@ closeContact.addEventListener('click', () => {
 
 const projects = [
   {
-    image: './assets/img/projects.jpg',
-    title: 'Keeping track of hundreds of components',
-    languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'Html'],
+    image: './assets/img/todo1.png',
+    title: 'A list to save to-do tasks',
+    languages: ['Jest', 'CSS', 'JavaScript', 'Html'],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the real Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    buttonLive: 'https://wdavidcch.github.io/portfolio/',
-    buttonSource: 'https://github.com/wdavidcch/portfolio',
+      'A simple to-do list to help you organize your daily tasks. You are able to Add new task, edit them, mark them as completed and eliminate all the completed ones.',
+    buttonLive: 'https://wdavidcch.github.io/to-do-list/dist/',
+    buttonSource: 'https://github.com/wdavidcch/to-do-list',
   },
   {
     image: './assets/img/medicalproject.jpg',
@@ -96,13 +96,13 @@ const projects = [
 
 const cardsContainer = document.querySelector('.cards-container');
 cardsContainer.innerHTML = `<article class="product-card">
-<img src="./assets/img/projects.jpg" alt="img" />
+<img src="./assets/img/todo1.png" />
 <div class="product-info">
-    <h2>Keeping track of hundreds of components</h2>
+    <h2>To-Do list</h2>
     <div>
         <ul class="leng">
-            <li>Ruby on Rails</li>
-            <li>Css</li>
+            <li>CSS</li>
+            <li>Jest</li>
             <li>JavaScript</li>
             <li>Html</li>
         </ul>
