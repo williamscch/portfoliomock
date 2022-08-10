@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Portfolio Page Link](https://wdavidcch.github.io/portfolio/)
+[Portfolio Page Link](https://williamscch.github.io/portfolio/)
 
 
 ## Getting Started
@@ -24,7 +24,7 @@
 
 👤 **Author1**
 
-- GitHub: [@wdavidcch](https://github.com/wdavidcch)
+- GitHub: [@wdavidcch](https://github.com/williamscch)
 - Twitter: [@wdavidcch](https://twitter.com/wdavidcch)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/williams-colmenares-989a6b151)
 - 
