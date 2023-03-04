@@ -1,9 +1,10 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My Portfolio
+# Portfolio Mock up
 
-> In this project I am starting to build my portfolio web page, I started with the mobile version, more specifically wit the tool bar and the header section.
+> In this project I build a portfolio web page. Mobile first approach.
+
 ## Built With
 
 -HTML
@@ -22,7 +23,7 @@
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@wdavidcch](https://github.com/williamscch)
 - Twitter: [@wdavidcch](https://twitter.com/wdavidcch)
