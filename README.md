@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Portfolio Page Link](https://portfoliomock.netlify.app/)
+[LIVE Link](https://portfoliomock-williamscch.netlify.app/)
 
 
 ## Getting Started
