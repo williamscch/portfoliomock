@@ -224,7 +224,7 @@ function openProjectCard(projectNum) {
   const cardPopUp = document.createElement('div');
   document.body.appendChild(wrapper);
   wrapper.appendChild(cardPopUp);
-  cardPopUp.classList.add('cardPopUp');
+  cardPopUp.classList.add('card-pop-up');
 
   const cardImg = document.createElement('img');
   const cardTitle = document.createElement('h3');
@@ -263,7 +263,7 @@ function openProjectCard(projectNum) {
   cardImg.src = projects[projectNum].image;
   cardTitle.textContent = projects[projectNum].title;
   cardInfo.textContent = projects[projectNum].description;
-  cardButtonsDiv.classList.add('cardButtonDiv');
+  cardButtonsDiv.classList.add('card-button-div');
   liveButton.href = projects[projectNum].buttonLive;
   liveButton.target = '_blank';
   liveButton.textContent = 'See Live';
